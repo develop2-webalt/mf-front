@@ -82,6 +82,7 @@
 
     <link rel="preload" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
           integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="./styles/adaptive.css" type="text/css" rel="stylesheet">
 
 </head>
 <body>
@@ -3774,7 +3775,7 @@
 
             <!--'end_frame_cache_bx_basketT0kNhm'--></div>
     </div>
-    <div class="header-top__wrap visible-mobile">
+    <div class="header-top__wrap hidden-tablet visible-mobile">
         <div class="header-top__left">
             <img src="./images/adaptive/logo.png" loading="lazy" alt="Логотип" class="header-top__logo">
         </div>
@@ -3836,14 +3837,13 @@
     }
 </style>
 
-<div class="d2 catalog">
+<div class="d2 catalog about">
     <div class="wrap">
         <div class="d2-ttl standart-ttl">
             <span class="red">О компании </span>
         </div>
-
-        <br>
-        <br>
+        <br class="hidden-mobile hidden-tablet">
+        <br class="hidden-mobile hidden-tablet">
         <img src="./about_files/на сайт о нас.png" loading="lazy">
         <div class="about_content">
             <!--<p>
@@ -3875,16 +3875,16 @@
                 находятся в г. Хабаровске и г. Благовещенске, что дает нам возможность охватывать Амурскую область и
                 Хабаровский край одновременно и своевременно осуществляя поставки.
             </p>
-            <br>
+
             <h3>Сертификаты и дипломы</h3>
-            <div class="cert-block">
+            <div class="cert-block js-certs-slider">
                 <div class="cert-item">
                     <img src="./about_files/serti1.jpg" loading="lazy">
                     <div class="cert-name">
                         Диплом GranFest
                     </div>
                 </div>
-                <div class="cert-item">
+                <div class="cert-item hidden-tablet">
                     <img src="./about_files/serti2.jpg" loading="lazy">
                     <div class="cert-name">
                         Сертификат Боярд
@@ -3903,32 +3903,43 @@
                     </div>
                 </div>
             </div>
-            <h3>Сведения о юридическом лице</h3>
-            <p>
-                Магазин "Мебельная фурнитура"
-            </p>
-            <br>
-            <p>
-                ИП Спицын Алексей Александрович
-            </p>
-            <br>
-            <p>
-                Р/счет: 40802810903000002353 в Дальневосточный банк ПАО "СБЕРБАНК РОССИИ" г. Хабаровск
-            </p>
-            <br>
-            <p>
-                ИНН: 280113811158
-            </p>
-            <br>
-            <p>
-                ОГРНИП: 305280129000038, свидетельство от 17 октября 2005 г.
-            </p>
-            <br>
+
+            <div class="requisites-flex">
+                <div class="cert-item hidden-mobile hidden-desktop">
+                    <img src="./about_files/serti2.jpg" loading="lazy">
+                    <div class="cert-name">
+                        Сертификат Боярд
+                    </div>
+                </div>
+
+                <h3>Сведения о юридическом лице</h3>
+                <p>
+                    Магазин "Мебельная фурнитура"
+                </p>
+                <br class="hidden-mobile">
+                <p>
+                    ИП Спицын Алексей Александрович
+                </p>
+                <br>
+                <p>
+                    Р/счет: 40802810903000002353 в Дальневосточный банк ПАО "СБЕРБАНК РОССИИ" г. Хабаровск
+                </p>
+                <br>
+                <p>
+                    ИНН: 280113811158
+                </p>
+                <br>
+                <p>
+                    ОГРНИП: 305280129000038, свидетельство от 17 октября 2005 г.
+                </p>
+            </div>
+            <br class="hidden-mobile hidden-tablet">
         </div>
-        <br></div>
+        <br class="hidden-mobile hidden-tablet">
+    </div>
 </div>
 
-<br>
+<br class="hidden-mobile hidden-tablet">
 
 <div class="bx-subscribe" id="sender-subscribe">
     <form class="d8" id="bx_subscribe_subform_sljzMT" role="form" method="post" action="https://mf-group.ru/">

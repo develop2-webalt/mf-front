@@ -95,6 +95,7 @@
 
     <link rel="preload" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
           integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="./styles/adaptive.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
@@ -3819,13 +3820,15 @@
     </div>
 </div>
 
-<div class="d2 catalog">
+<div class="d2 catalog subscribes">
     <div class="wrap">
         <div class="d2-ttl standart-ttl">
             <span class="red">Ваши </span>подписки
         </div>
+
         <link href="./subscribes_files/font-awesome.css" type="text/css" rel="stylesheet">
-        <div class="pagination wrap bx-breadcrumb" itemprop="http://schema.org/breadcrumb" itemscope=""
+
+        <div class="pagination wrap bx-breadcrumb bx-breadcrumb__inner" itemprop="http://schema.org/breadcrumb" itemscope=""
              itemtype="http://schema.org/BreadcrumbList">
             <a href="https://khv.mf-group.ru/" title="Главная страница" itemprop="url" id="bx_breadcrumb_0" itemscope=""
                itemtype="http://schema.org/ListItem">
@@ -3843,7 +3846,10 @@
             <meta itemprop="position" content="3">
             <div style="clear:both"></div>
         </div>
-        <br><br><br>
+        <br class="hidden-mobile hidden-tablet">
+        <br class="hidden-mobile hidden-tablet">
+        <br class="hidden-mobile hidden-tablet">
+
         <div class="catalog-flex">
             <div class="catalog-right">
                 <div class="bx_item_list_you_looked_horizontal col3">
@@ -3870,8 +3876,98 @@
                                         <div>
                                             <a id="bx_1807579142_226701_delete_subscribe" class="d2-btn btn-link"
                                                href="javascript:void(0)">
-                                                <span class="d2-btn-img"><i class="fa fa-envelope-o"
+                                                <span class="d2-btn-img hidden-mobile hidden-tablet"><i class="fa fa-envelope-o"
                                                                             aria-hidden="true"></i></span>
+                                                <span>Отписаться</span>
+                                            </a>
+                                        </div>
+                                        <div style="clear: both;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d2-slid bx_catalog_item double" id="bx_1807579142_226701">
+                                <!--		<div class="catalog-product-subscribe-list-close">-->
+                                <!--			<span class="catalog-product-subscribe-list-close-item"></span>-->
+                                <!--		</div>-->
+                                <div class="bx_catalog_item_container  "><a id="bx_1807579142_226701_secondpict"
+                                                                            href="https://khv.mf-group.ru/catalog/moyki_kukhonnye_1/moyki_ewigstein/ewigstein_moyka_kvarts_podstolnyy_montazh_480_450_chernyy/"
+                                                                            class="bx_catalog_item_images_double"
+                                                                            style="background-image: url(&#39;/upload/iblock/b72/ndxrzgjvz9i7yksq0memfmn80sgmi85l.jpg&#39;)"
+                                                                            title="EWIGSTEIN Мойка кварц подстольный монтаж 480*450  черный"> </a>
+                                    <div class="bx_catalog_item_title">
+                                        <a href="https://khv.mf-group.ru/catalog/moyki_kukhonnye_1/moyki_ewigstein/ewigstein_moyka_kvarts_podstolnyy_montazh_480_450_chernyy/"
+                                           title="EWIGSTEIN Мойка кварц подстольный монтаж 480*450  черный">EWIGSTEIN
+                                            Мойка кварц подстольный монтаж 480*450 черный</a>
+                                    </div>
+                                    <div class="bx_catalog_item_price">
+                                        <div id="bx_1807579142_226701_price" class="bx_price"></div>
+                                    </div>
+                                    <div class="bx_catalog_item_controls">
+                                        <div>
+                                            <a id="bx_1807579142_226701_delete_subscribe" class="d2-btn btn-link"
+                                               href="javascript:void(0)">
+                                                <span class="d2-btn-img hidden-mobile hidden-tablet"><i class="fa fa-envelope-o"
+                                                                                                        aria-hidden="true"></i></span>
+                                                <span>Отписаться</span>
+                                            </a>
+                                        </div>
+                                        <div style="clear: both;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d2-slid bx_catalog_item double" id="bx_1807579142_226701">
+                                <!--		<div class="catalog-product-subscribe-list-close">-->
+                                <!--			<span class="catalog-product-subscribe-list-close-item"></span>-->
+                                <!--		</div>-->
+                                <div class="bx_catalog_item_container  "><a id="bx_1807579142_226701_secondpict"
+                                                                            href="https://khv.mf-group.ru/catalog/moyki_kukhonnye_1/moyki_ewigstein/ewigstein_moyka_kvarts_podstolnyy_montazh_480_450_chernyy/"
+                                                                            class="bx_catalog_item_images_double"
+                                                                            style="background-image: url(&#39;/upload/iblock/b72/ndxrzgjvz9i7yksq0memfmn80sgmi85l.jpg&#39;)"
+                                                                            title="EWIGSTEIN Мойка кварц подстольный монтаж 480*450  черный"> </a>
+                                    <div class="bx_catalog_item_title">
+                                        <a href="https://khv.mf-group.ru/catalog/moyki_kukhonnye_1/moyki_ewigstein/ewigstein_moyka_kvarts_podstolnyy_montazh_480_450_chernyy/"
+                                           title="EWIGSTEIN Мойка кварц подстольный монтаж 480*450  черный">EWIGSTEIN
+                                            Мойка кварц подстольный монтаж 480*450 черный</a>
+                                    </div>
+                                    <div class="bx_catalog_item_price">
+                                        <div id="bx_1807579142_226701_price" class="bx_price"></div>
+                                    </div>
+                                    <div class="bx_catalog_item_controls">
+                                        <div>
+                                            <a id="bx_1807579142_226701_delete_subscribe" class="d2-btn btn-link"
+                                               href="javascript:void(0)">
+                                                <span class="d2-btn-img hidden-mobile hidden-tablet"><i class="fa fa-envelope-o"
+                                                                                                        aria-hidden="true"></i></span>
+                                                <span>Отписаться</span>
+                                            </a>
+                                        </div>
+                                        <div style="clear: both;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d2-slid bx_catalog_item double" id="bx_1807579142_226701">
+                                <!--		<div class="catalog-product-subscribe-list-close">-->
+                                <!--			<span class="catalog-product-subscribe-list-close-item"></span>-->
+                                <!--		</div>-->
+                                <div class="bx_catalog_item_container  "><a id="bx_1807579142_226701_secondpict"
+                                                                            href="https://khv.mf-group.ru/catalog/moyki_kukhonnye_1/moyki_ewigstein/ewigstein_moyka_kvarts_podstolnyy_montazh_480_450_chernyy/"
+                                                                            class="bx_catalog_item_images_double"
+                                                                            style="background-image: url(&#39;/upload/iblock/b72/ndxrzgjvz9i7yksq0memfmn80sgmi85l.jpg&#39;)"
+                                                                            title="EWIGSTEIN Мойка кварц подстольный монтаж 480*450  черный"> </a>
+                                    <div class="bx_catalog_item_title">
+                                        <a href="https://khv.mf-group.ru/catalog/moyki_kukhonnye_1/moyki_ewigstein/ewigstein_moyka_kvarts_podstolnyy_montazh_480_450_chernyy/"
+                                           title="EWIGSTEIN Мойка кварц подстольный монтаж 480*450  черный">EWIGSTEIN
+                                            Мойка кварц подстольный монтаж 480*450 черный</a>
+                                    </div>
+                                    <div class="bx_catalog_item_price">
+                                        <div id="bx_1807579142_226701_price" class="bx_price"></div>
+                                    </div>
+                                    <div class="bx_catalog_item_controls">
+                                        <div>
+                                            <a id="bx_1807579142_226701_delete_subscribe" class="d2-btn btn-link"
+                                               href="javascript:void(0)">
+                                                <span class="d2-btn-img hidden-mobile hidden-tablet"><i class="fa fa-envelope-o"
+                                                                                                        aria-hidden="true"></i></span>
                                                 <span>Отписаться</span>
                                             </a>
                                         </div>
@@ -3881,6 +3977,7 @@
                             </div>
                             <div style="clear: both;"></div>
                         </div>
+                        <div class="bottom_border hidden-mobile hidden-desktop"></div>
                     </div>
                 </div>
             </div>

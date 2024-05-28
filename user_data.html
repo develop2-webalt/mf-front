@@ -95,6 +95,7 @@
 
     <link rel="preload" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
           integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="./styles/adaptive.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
@@ -3819,7 +3820,7 @@
     </div>
 </div>
 
-<div class="d2 catalog">
+<div class="d2 catalog user_data">
     <div class="wrap">
 
         <div class="bx_profile">
@@ -3840,7 +3841,7 @@
                             <strong>13.05.2024 10:45:33</strong>
                         </div>
                     </div>
-                    <br><br>
+                    <br class="hidden-mobile hidden-tablet"><br class="hidden-mobile hidden-tablet">
                     <div class="form-group">
                         <label class="main-profile-form-label col-sm-12 col-md-3 text-md-right" for="main-profile-name">Имя:</label>
                         <input class="form-control" type="text" name="NAME" maxlength="50" id="main-profile-name"
@@ -3889,7 +3890,7 @@
                            value="Сохранить">
                     &nbsp;
                     <input type="submit" class="btn btn-themes btn-default btn-md main-profile-cancel" name="reset"
-                           value="Отмена">
+                           value="Сбросить">
                 </p>
             </form>
             <div class="col-sm-12 main-profile-social-block">

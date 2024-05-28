@@ -96,6 +96,7 @@
 
     <link rel="preload" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
           integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="./styles/adaptive.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
@@ -3880,7 +3881,7 @@
                                 <div class="basket-item-label-text basket-item-label-big  basket-item-label-top basket-item-label-left">
                                     {{#LABEL_VALUES}}
                                     <div
-                                            {{#HIDE_MOBILE}} class="hidden-xs"{{/HIDE_MOBILE}}>
+                                    {{#HIDE_MOBILE}} class="hidden-xs"{{/HIDE_MOBILE}}>
                                     <span title="{{NAME}}">{{NAME}}</span>
                                 </div>
                                 {{/LABEL_VALUES}}
@@ -4130,7 +4131,7 @@
                         {{/SHOW_LOADING}}
                     </div>
                 </td>
-                <td class="basket-items-list-item-remove hidden-xs">
+                <td class="basket-items-list-item-remove hidden-xs hidden-mobile hidden-tablet">
                     <div class="basket-item-block-actions">
                         <span class="basket-item-actions-remove" data-entity="basket-item-delete"></span>
                         {{#SHOW_LOADING}}
@@ -4250,6 +4251,18 @@
                                     <tbody>
                                     <tr class="basket-items-list-item-container" id="basket-item-433392"
                                         data-entity="basket-item" data-id="433392">
+
+                                        <div class="basket-items-list-item-warning-container hidden-desktop">
+                                            <div class="alert alert-warning alert-dismissable"
+                                                 data-entity="basket-item-warning-node">
+                                                <span class="close" data-entity="basket-item-warning-close">×</span>
+                                                <div data-entity="basket-item-warning-text">Извините, но
+                                                    указанное ранее количество товара недоступно.<br>Установлено
+                                                    ближайшее доступное значение.
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         <td class="basket-items-list-item-descriptions">
                                             <div class="basket-items-list-item-descriptions-inner"
                                                  id="basket-item-height-aligner-433392">
@@ -4266,8 +4279,9 @@
                                                     </a>
                                                 </div>
                                                 <div class="basket-item-block-info">
-                                                    <span class="basket-item-actions-remove visible-xs"
+                                                    <span class="basket-item-actions-remove"
                                                           data-entity="basket-item-delete"></span>
+
                                                     <h2 class="basket-item-info-name bascket-product-text">
                                                         <a href="https://khv.mf-group.ru/catalog/moyki_kukhonnye_1/moyki_ewigstein/ewigstein_moyka_kvarts_gerd_60k_600_500_mm_antratsit/"
                                                            class="basket-item-info-name-link">
@@ -4277,7 +4291,8 @@
 
                                                         </a>
                                                     </h2>
-                                                    <div class="basket-items-list-item-warning-container">
+
+                                                    <div class="basket-items-list-item-warning-container hidden-mobile hidden-tablet">
                                                         <div class="alert alert-warning alert-dismissable"
                                                              data-entity="basket-item-warning-node">
                                                             <span class="close" data-entity="basket-item-warning-close">×</span>
@@ -4287,9 +4302,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
+
                                                     <div class="basket-item-block-properties">
-
-
                                                         <div class="basket-item-property-custom basket-item-property-custom-text
 														" data-entity="basket-item-property">
                                                             <div class="basket-item-property-custom-name">Тип цены</div>
@@ -4299,12 +4313,51 @@
                                                                 Распродажа (для сайта)_ЗАКАЗЫ_Хабаровск
                                                             </div>
                                                         </div>
+                                                    </div>
 
+                                                    <div class="basket-item-block-amount hidden-mobile hidden-desktop"
+                                                         data-entity="basket-item-quantity-block">
+                                                        <span class="basket-item-amount-btn-minus"
+                                                              data-entity="basket-item-quantity-minus">-</span>
+                                                        <div class="basket-item-amount-filed-block">
+                                                            <input type="text" class="basket-item-amount-filed" value="1"
+                                                                   data-value="1" data-entity="basket-item-quantity-field"
+                                                                   id="basket-item-quantity-433392">
+                                                        </div>
+                                                        <span class="basket-item-amount-btn-plus"
+                                                              data-entity="basket-item-quantity-plus">+</span>
+                                                        <div class="basket-item-amount-field-description">
+                                                            шт
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="basket-item-block-price__container">
+                                                        <div class="basket-items-list-item-price basket-items-list-item-price-for-one basket-item-block-price hidden-mobile hidden-desktop">
+                                                            <div class="basket-item-price-current">
+                                                                <b class="basket-item-price-current-text"
+                                                                   id="basket-item-price-433392">
+                                                                    91 ₽
+                                                                </b>
+                                                            </div>
+
+                                                            <div class="basket-item-price-title">
+                                                                цена за 1 шт
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="basket-item-block-price basket-item-block-price-total hidden-mobile hidden-desktop">
+                                                            <div class="basket-item-price-current">
+                                                                <b class="basket-item-price-current-text"
+                                                                   id="basket-item-sum-price-433392">
+                                                                    91 ₽
+                                                                </b>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="basket-items-list-item-price basket-items-list-item-price-for-one hidden-xs">
+                                        <td class="basket-items-list-item-price basket-items-list-item-price-for-one hidden-xs hidden-mobile hidden-tablet">
                                             <div class="basket-item-block-price">
 
                                                 <div class="basket-item-price-current">
@@ -4319,7 +4372,7 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="basket-items-list-item-amount">
+                                        <td class="basket-items-list-item-amount hidden-mobile hidden-tablet">
                                             <div class="basket-item-block-amount"
                                                  data-entity="basket-item-quantity-block">
                                                 <span class="basket-item-amount-btn-minus"
@@ -4336,7 +4389,7 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="basket-items-list-item-price">
+                                        <td class="basket-items-list-item-price hidden-mobile hidden-tablet">
                                             <div class="basket-item-block-price">
 
                                                 <div class="basket-item-price-current">
@@ -4348,7 +4401,40 @@
 
                                             </div>
                                         </td>
-                                        <td class="basket-items-list-item-remove hidden-xs">
+
+                                        <tr class="basket-item-block__mobile hidden-tablet hidden-desktop">
+                                            <td class="basket-items-list-item-amount">
+                                                <div class="basket-item-block-amount"
+                                                     data-entity="basket-item-quantity-block">
+                                                    <span class="basket-item-amount-btn-minus"
+                                                          data-entity="basket-item-quantity-minus">-</span>
+                                                    <div class="basket-item-amount-filed-block">
+                                                        <input type="text" class="basket-item-amount-filed" value="1"
+                                                               data-value="1" data-entity="basket-item-quantity-field"
+                                                               id="basket-item-quantity-433392">
+                                                    </div>
+                                                    <span class="basket-item-amount-btn-plus"
+                                                          data-entity="basket-item-quantity-plus">+</span>
+                                                    <div class="basket-item-amount-field-description">
+                                                        шт
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-price">
+                                                <div class="basket-item-block-price">
+
+                                                    <div class="basket-item-price-current">
+                                                        <b class="basket-item-price-current-text"
+                                                           id="basket-item-sum-price-433392">
+                                                            8 260 ₽
+                                                        </b>
+                                                    </div>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <td class="basket-items-list-item-remove hidden-xs  hidden-mobile hidden-tablet">
                                             <div class="basket-item-block-actions">
                                                 <span class="basket-item-actions-remove"
                                                       data-entity="basket-item-delete"></span>
@@ -4373,20 +4459,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="basket-item-block-info">
-                                                    <span class="basket-item-actions-remove visible-xs"
+                                                    <span class="basket-item-actions-remove"
                                                           data-entity="basket-item-delete"></span>
+
                                                     <h2 class="basket-item-info-name bascket-product-text">
                                                         <a href="https://khv.mf-group.ru/catalog/stoleshnitsy_i_komplektuyushchie/mebelnye_shchity_1/mebelnye_shchity_skif/mebelnyy_shchit_duglas_svetlyy_133_vyvod/"
                                                            class="basket-item-info-name-link">
-
                                                             <b data-entity="basket-item-name">Мебельный щит Дуглас
                                                                 светлый №133 ВЫВОД!</b>
-
                                                         </a>
                                                     </h2>
+
                                                     <div class="basket-item-block-properties">
-
-
                                                         <div class="basket-item-property-custom basket-item-property-custom-text
 														" data-entity="basket-item-property">
                                                             <div class="basket-item-property-custom-name">Тип цены</div>
@@ -4396,12 +4480,51 @@
                                                                 Распродажа (для сайта)_ЗАКАЗЫ_Хабаровск
                                                             </div>
                                                         </div>
+                                                    </div>
 
+                                                    <div class="basket-item-block-amount hidden-mobile hidden-desktop"
+                                                         data-entity="basket-item-quantity-block">
+                                                        <span class="basket-item-amount-btn-minus"
+                                                              data-entity="basket-item-quantity-minus">-</span>
+                                                        <div class="basket-item-amount-filed-block">
+                                                            <input type="text" class="basket-item-amount-filed" value="1"
+                                                                   data-value="1" data-entity="basket-item-quantity-field"
+                                                                   id="basket-item-quantity-433392">
+                                                        </div>
+                                                        <span class="basket-item-amount-btn-plus"
+                                                              data-entity="basket-item-quantity-plus">+</span>
+                                                        <div class="basket-item-amount-field-description">
+                                                            шт
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="basket-item-block-price__container">
+                                                        <div class="basket-items-list-item-price basket-items-list-item-price-for-one basket-item-block-price hidden-mobile hidden-desktop">
+                                                            <div class="basket-item-price-current">
+                                                                <b class="basket-item-price-current-text"
+                                                                   id="basket-item-price-433393">
+                                                                    1 000 ₽
+                                                                </b>
+                                                            </div>
+
+                                                            <div class="basket-item-price-title">
+                                                                цена за 1 шт
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="basket-item-block-price basket-item-block-price-total hidden-mobile hidden-desktop">
+                                                            <div class="basket-item-price-current">
+                                                                <b class="basket-item-price-current-text"
+                                                                   id="basket-item-sum-price-433393">
+                                                                    1 000 ₽
+                                                                </b>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="basket-items-list-item-price basket-items-list-item-price-for-one hidden-xs">
+                                        <td class="basket-items-list-item-price basket-items-list-item-price-for-one hidden-xs hidden-mobile hidden-tablet">
                                             <div class="basket-item-block-price">
 
                                                 <div class="basket-item-price-current">
@@ -4416,7 +4539,7 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="basket-items-list-item-amount">
+                                        <td class="basket-items-list-item-amount hidden-mobile hidden-tablet">
                                             <div class="basket-item-block-amount"
                                                  data-entity="basket-item-quantity-block">
                                                 <span class="basket-item-amount-btn-minus"
@@ -4433,7 +4556,7 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="basket-items-list-item-price">
+                                        <td class="basket-items-list-item-price hidden-mobile hidden-tablet">
                                             <div class="basket-item-block-price">
 
                                                 <div class="basket-item-price-current">
@@ -4445,7 +4568,40 @@
 
                                             </div>
                                         </td>
-                                        <td class="basket-items-list-item-remove hidden-xs">
+
+                                        <tr class="basket-item-block__mobile hidden-tablet hidden-desktop">
+                                            <td class="basket-items-list-item-amount">
+                                                <div class="basket-item-block-amount"
+                                                     data-entity="basket-item-quantity-block">
+                                                    <span class="basket-item-amount-btn-minus"
+                                                          data-entity="basket-item-quantity-minus">-</span>
+                                                    <div class="basket-item-amount-filed-block">
+                                                        <input type="text" class="basket-item-amount-filed" value="1"
+                                                               data-value="1" data-entity="basket-item-quantity-field"
+                                                               id="basket-item-quantity-433393">
+                                                    </div>
+                                                    <span class="basket-item-amount-btn-plus"
+                                                          data-entity="basket-item-quantity-plus">+</span>
+                                                    <div class="basket-item-amount-field-description">
+                                                        шт
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-price">
+                                                <div class="basket-item-block-price">
+
+                                                    <div class="basket-item-price-current">
+                                                        <b class="basket-item-price-current-text"
+                                                           id="basket-item-sum-price-433393">
+                                                            1 000 ₽
+                                                        </b>
+                                                    </div>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <td class="basket-items-list-item-remove hidden-xs hidden-mobile hidden-tablet">
                                             <div class="basket-item-block-actions">
                                                 <span class="basket-item-actions-remove"
                                                       data-entity="basket-item-delete"></span>
@@ -4470,20 +4626,19 @@
                                                     </a>
                                                 </div>
                                                 <div class="basket-item-block-info">
-                                                    <span class="basket-item-actions-remove visible-xs"
+                                                    <span class="basket-item-actions-remove"
                                                           data-entity="basket-item-delete"></span>
+
                                                     <h2 class="basket-item-info-name bascket-product-text">
                                                         <a href="https://khv.mf-group.ru/catalog/moyki_kukhonnye_1/moyki_ewigstein/ewigstein_moyka_kvarts_elegant_45f_580_480mm_antratsit_/"
                                                            class="basket-item-info-name-link">
-
                                                             <b data-entity="basket-item-name">EWIGSTEIN Мойка кварц
                                                                 Elegant 45F 580*480мм антрацит </b>
 
                                                         </a>
                                                     </h2>
+
                                                     <div class="basket-item-block-properties">
-
-
                                                         <div class="basket-item-property-custom basket-item-property-custom-text
 														" data-entity="basket-item-property">
                                                             <div class="basket-item-property-custom-name">Тип цены</div>
@@ -4493,12 +4648,51 @@
                                                                 Распродажа (для сайта)_ЗАКАЗЫ_Хабаровск
                                                             </div>
                                                         </div>
+                                                    </div>
 
+                                                    <div class="basket-item-block-amount hidden-mobile hidden-desktop"
+                                                         data-entity="basket-item-quantity-block">
+                                                        <span class="basket-item-amount-btn-minus"
+                                                              data-entity="basket-item-quantity-minus">-</span>
+                                                        <div class="basket-item-amount-filed-block">
+                                                            <input type="text" class="basket-item-amount-filed" value="1"
+                                                                   data-value="1" data-entity="basket-item-quantity-field"
+                                                                   id="basket-item-quantity-433392">
+                                                        </div>
+                                                        <span class="basket-item-amount-btn-plus"
+                                                              data-entity="basket-item-quantity-plus">+</span>
+                                                        <div class="basket-item-amount-field-description">
+                                                            шт
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="basket-item-block-price__container">
+                                                        <div class="basket-items-list-item-price basket-items-list-item-price-for-one basket-item-block-price hidden-mobile hidden-desktop">
+                                                            <div class="basket-item-price-current">
+                                                                <b class="basket-item-price-current-text"
+                                                                   id="basket-item-price-433439">
+                                                                    7 615 ₽
+                                                                </b>
+                                                            </div>
+
+                                                            <div class="basket-item-price-title">
+                                                                цена за 1 шт
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="basket-item-block-price basket-item-block-price-total hidden-mobile hidden-desktop">
+                                                            <div class="basket-item-price-current">
+                                                                <b class="basket-item-price-current-text"
+                                                                   id="basket-item-sum-price-433439">
+                                                                    7 615 ₽
+                                                                </b>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="basket-items-list-item-price basket-items-list-item-price-for-one hidden-xs">
+                                        <td class="basket-items-list-item-price basket-items-list-item-price-for-one hidden-xs hidden-mobile hidden-tablet">
                                             <div class="basket-item-block-price">
 
                                                 <div class="basket-item-price-current">
@@ -4513,7 +4707,7 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="basket-items-list-item-amount">
+                                        <td class="basket-items-list-item-amount hidden-mobile hidden-tablet">
                                             <div class="basket-item-block-amount"
                                                  data-entity="basket-item-quantity-block">
                                                 <span class="basket-item-amount-btn-minus"
@@ -4530,7 +4724,7 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="basket-items-list-item-price">
+                                        <td class="basket-items-list-item-price hidden-mobile hidden-tablet">
                                             <div class="basket-item-block-price">
 
                                                 <div class="basket-item-price-current">
@@ -4542,15 +4736,46 @@
 
                                             </div>
                                         </td>
-                                        <td class="basket-items-list-item-remove hidden-xs">
+
+                                        <tr class="basket-item-block__mobile hidden-tablet hidden-desktop">
+                                            <td class="basket-items-list-item-amount">
+                                                <div class="basket-item-block-amount"
+                                                     data-entity="basket-item-quantity-block">
+                                                    <span class="basket-item-amount-btn-minus"
+                                                          data-entity="basket-item-quantity-minus">-</span>
+                                                    <div class="basket-item-amount-filed-block">
+                                                        <input type="text" class="basket-item-amount-filed" value="1"
+                                                               data-value="1" data-entity="basket-item-quantity-field"
+                                                               id="basket-item-quantity-433439">
+                                                    </div>
+                                                    <span class="basket-item-amount-btn-plus"
+                                                          data-entity="basket-item-quantity-plus">+</span>
+                                                    <div class="basket-item-amount-field-description">
+                                                        шт
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="basket-items-list-item-price">
+                                                <div class="basket-item-block-price">
+
+                                                    <div class="basket-item-price-current">
+                                                        <b class="basket-item-price-current-text"
+                                                           id="basket-item-sum-price-433439">
+                                                            7 615 ₽
+                                                        </b>
+                                                    </div>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <td class="basket-items-list-item-remove hidden-xs hidden-mobile hidden-tablet">
                                             <div class="basket-item-block-actions">
                                                 <span class="basket-item-actions-remove"
                                                       data-entity="basket-item-delete"></span>
                                             </div>
                                         </td>
                                     </tr>
-
-
                                     </tbody>
                                 </table>
                             </div>
@@ -4559,7 +4784,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12" data-entity="basket-total-block">
+                <div class="col-xs-12 basket-total-block" data-entity="basket-total-block">
                     <div class="basket-checkout-container" data-entity="basket-checkout-aligner">
                         <div class="basket-checkout-section">
                             <div class="basket-checkout-section-inner">
@@ -4582,17 +4807,22 @@
 
                                     </div>
                                 </div>
-                                <div class="basket-checkout-block basket-checkout-block-btn">
+                                <div class="basket-checkout-block basket-checkout-block-btn hidden-mobile">
                                     <button class="bascket-btn basket-btn-checkout"
                                             data-entity="basket-checkout-button">
                                         <span class="bascket-btn-text">Продолжить оформление заказа</span>
-                                        <span class="bascket-btn-arrow"><img src="./cart_files/arrow-right.png"
+                                        <span class="bascket-btn-arrow hidden-tablet"><img src="./cart_files/arrow-right.png"
                                                                              loading="lazy" alt=""></span>
                                     </button>
                                 </div>
                             </div>
                         </div>
-
+                    </div>
+                    <div class="basket-checkout-block basket-checkout-block-btn hidden-tablet hidden-desktop">
+                        <button class="bascket-btn basket-btn-checkout"
+                                data-entity="basket-checkout-button">
+                            <span class="bascket-btn-text">Продолжить оформление заказа</span>
+                        </button>
                     </div>
                 </div>
             </div>

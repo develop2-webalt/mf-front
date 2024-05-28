@@ -95,6 +95,7 @@
 
     <link rel="preload" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
           integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="./styles/adaptive.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
@@ -3819,9 +3820,9 @@
     </div>
 </div>
 
-<div class="d2 catalog">
+<div class="d2 catalog user_profiles">
     <div class="wrap">
-        <p>
+        <p class="hidden-mobile hidden-tablet">
             <font class="text">Профили
 
 
@@ -3846,7 +3847,8 @@
                 </noindex>
 
             </font></p>
-        <table class="table sale-personal-profile-list-container">
+
+        <table class="table sale-personal-profile-list-container hidden-mobile hidden-tablet">
             <tbody>
             <tr>
                 <th>
@@ -4173,7 +4175,514 @@
             </tr>
             </tbody>
         </table>
-        <p>
+
+        <div class="sale-personal-profile-list-container user_profiles__container hidden-desktop">
+            <div class="user_profiles__row">
+                <div>
+                    Код <a class="sale-personal-profile-list-arrow-up"
+                           href="https://khv.mf-group.ru/personal/profiles/index.php?by=ID&amp;order=asc#nav_start">
+                    <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="sale-personal-profile-list-arrow-down"
+                       href="https://khv.mf-group.ru/personal/profiles/index.php?by=ID&amp;order=desc#nav_start">
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
+                </div>
+                <div>
+                    Дата обновления <a class="sale-personal-profile-list-arrow-up"
+                                       href="https://khv.mf-group.ru/personal/profiles/index.php?by=DATE_UPDATE&amp;order=asc#nav_start">
+                    <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="sale-personal-profile-list-arrow-down"
+                       href="https://khv.mf-group.ru/personal/profiles/index.php?by=DATE_UPDATE&amp;order=desc#nav_start">
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
+                </div>
+                <div>
+                    Название <a class="sale-personal-profile-list-arrow-up"
+                                href="https://khv.mf-group.ru/personal/profiles/index.php?by=NAME&amp;order=asc#nav_start">
+                    <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="sale-personal-profile-list-arrow-down"
+                       href="https://khv.mf-group.ru/personal/profiles/index.php?by=NAME&amp;order=desc#nav_start">
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
+                </div>
+                <div>
+                    Тип плательщика <a class="sale-personal-profile-list-arrow-up"
+                                       href="https://khv.mf-group.ru/personal/profiles/index.php?by=PERSON_TYPE_ID&amp;order=asc#nav_start">
+                    <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="sale-personal-profile-list-arrow-down"
+                       href="https://khv.mf-group.ru/personal/profiles/index.php?by=PERSON_TYPE_ID&amp;order=desc#nav_start">
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
+                </div>
+                <div>Действия</div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1605</b></div>
+                <div>23.04.2024 12:49:52</div>
+                <div>Рога и копыта</div>
+                <div>Юридическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1605">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1605&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>7283</b></div>
+                <div>21.02.2024 19:23:29</div>
+                <div>Алексей Тестовый</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/7283">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=7283&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                                <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg> </a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1604</b></div>
+                <div>09.11.2020 09:52:37</div>
+                <div>Тестовый пользователь</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1604">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1604&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                                <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg> </a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>6485</b></div>
+                <div>31.01.2020 17:58:59</div>
+                <div>ООО "Test"</div>
+                <div>Юридическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/6485">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=6485&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                                <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg> </a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1925</b></div>
+                <div>31.01.2020 17:48:42</div>
+                <div>Тестовый пользователь</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1925">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1925&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>5000</b></div>
+                <div>15.07.2019 16:51:48</div>
+                <div>ООО "Test"</div>
+                <div>Юридическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/5000">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=5000&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1851</b></div>
+                <div>25.03.2019 16:06:44</div>
+                <div>Тестовый пользователь</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1851">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1851&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1849</b></div>
+                <div>25.03.2019 15:56:55</div>
+                <div>Тестовый пользователь</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1849">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1849&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1711</b></div>
+                <div>14.03.2019 05:46:26</div>
+                <div>Тестовый пользователь</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1711">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1711&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1710</b></div>
+                <div>14.03.2019 05:43:14</div>
+                <div>Тестовый пользователь</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1710">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1710&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1705</b></div>
+                <div>13.03.2019 15:45:40</div>
+                <div>Тестовый пользователь</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1705">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1705&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1701</b></div>
+                <div>12.03.2019 22:51:23</div>
+                <div>Тестовый пользователь</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1701">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1701&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1699</b></div>
+                <div>12.03.2019 18:20:57</div>
+                <div>Тестовый пользователь</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1699">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1699&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1696</b></div>
+                <div>12.03.2019 17:54:04</div>
+                <div>Тестовый пользователь</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1696">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1696&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1684</b></div>
+                <div>11.03.2019 18:55:58</div>
+                <div>Тестовый пользователь</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1684">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1684&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1671</b></div>
+                <div>07.03.2019 16:35:22</div>
+                <div>Тестовый пользователь</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1671">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1671&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1670</b></div>
+                <div>07.03.2019 16:16:51</div>
+                <div>Тестовый пользователь</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1670">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1670&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1668</b></div>
+                <div>06.03.2019 20:02:14</div>
+                <div>Тестовый пользователь</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1668">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1668&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1667</b></div>
+                <div>06.03.2019 19:58:00</div>
+                <div>Тестовый пользователь</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1667">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1667&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="user_profiles__row">
+                <div><b>1666</b></div>
+                <div>06.03.2019 19:51:53</div>
+                <div>Тестовый пользователь</div>
+                <div>Физическое лицо</div>
+                <div class="sale-personal-profile-list-actions">
+                    <a class="sale-personal-profile-list-change-button" title="Изменить профиль"
+                       href="https://khv.mf-group.ru/personal/profiles/1666">Изменить </a>
+
+                    <a class="sale-personal-profile-list-close-button" title="Удалить профиль"
+                       href="javascript:if(confirm(&#39;Вы уверены, что хотите удалить этот профиль?&#39;)) window.location=&#39;/personal/profiles/?del_id=1666&amp;sessid=044fbbe3df2a60ddd7b79266d4253034&#39;">
+                                               <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_9246)">
+                                <path d="M6.91448 0.0855792C6.85978 0.0309001 6.78561 0.000183105 6.70827 0.000183105C6.63093 0.000183105 6.55676 0.0309001 6.50206 0.0855792L3.49994 3.0877L0.497813 0.0855792C0.443117 0.0309001 0.368944 0.000183105 0.291604 0.000183105C0.214265 0.000183105 0.140092 0.0309001 0.0853961 0.0855792C0.030717 0.140275 0 0.214448 0 0.291788C0 0.369127 0.030717 0.4433 0.0853961 0.497996L3.08752 3.50012L0.0853961 6.50225C0.030717 6.55694 0 6.63111 0 6.70845C0 6.78579 0.030717 6.85997 0.0853961 6.91466C0.140092 6.96934 0.214265 7.00006 0.291604 7.00006C0.368944 7.00006 0.443117 6.96934 0.497813 6.91466L3.49994 3.91254L6.50206 6.91466C6.55676 6.96934 6.63093 7.00006 6.70827 7.00006C6.78561 7.00006 6.85978 6.96934 6.91448 6.91466C6.96916 6.85997 6.99988 6.78579 6.99988 6.70845C6.99988 6.63111 6.96916 6.55694 6.91448 6.50225L3.91235 3.50012L6.91448 0.497996C6.96916 0.4433 6.99988 0.369127 6.99988 0.291788C6.99988 0.214448 6.96916 0.140275 6.91448 0.0855792Z" fill="#BF0D33" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_78_9246">
+                                    <rect width="7" height="7" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <p class="hidden-mobile hidden-tablet">
             <font class="text">Профили
 
 

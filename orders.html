@@ -96,6 +96,7 @@
 
     <link rel="preload" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
           integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="./styles/adaptive.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
@@ -3820,533 +3821,619 @@
     </div>
 </div>
 
-<div class="d2 catalog">
+<div class="d2 catalog orders">
     <div class="wrap">
         <div class="row col-md-12 col-sm-12">
             <a class="sale-order-history-link" href="https://khv.mf-group.ru/personal/orders/?filter_history=Y">
                 Посмотреть историю заказов </a>
         </div>
-        <h1 class="sale-order-title">
-            Заказы в статусе «Принят, ожидается оплата»
-        </h1>
-        <div class="col-md-12 col-sm-12 sale-order-list-container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12 sale-order-list-title-container">
-                    <h2 class="sale-order-list-title">
-                        Заказ №38696 от 23.04.2024,
-                        1 товар на сумму 3 650 ₽ </h2>
+
+        <div class="orders__inner">
+            <h1 class="sale-order-title">
+                Заказы в статусе «Принят, ожидается оплата»
+            </h1>
+            <div class="col-md-12 col-sm-12 sale-order-list-container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 sale-order-list-title-container">
+                        <h2 class="sale-order-list-title">
+                            Заказ №38696 от 23.04.2024,
+                            1 товар на сумму 3 650 ₽ </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 sale-order-list-inner-container">
+                            <span class="sale-order-list-inner-title-line">
+                                <span class="sale-order-list-inner-title-line-item">Оплата</span>
+                                <span class="sale-order-list-inner-title-line-border"></span>
+                            </span>
+                        <div class="row sale-order-list-inner-row">
+
+                            <div class="sale-order-list-inner-row-body">
+                                <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-payment">
+                                    <div class="sale-order-list-payment-title">
+                                        Счет №38696/1 от 23.04.2024, <span class="sale-order-list-payment-title-element">Оплата по счету</span>
+                                        <span class="sale-order-list-status-alert">Не оплачено</span>
+                                    </div>
+                                    <div class="sale-order-list-payment-price">
+                                        <span class="sale-order-list-payment-element">Сумма к оплате по счету:</span>
+
+                                        <span class="sale-order-list-payment-number">3 650 ₽</span>
+                                    </div>
+                                    <a href="https://khv.mf-group.ru/personal/orders/#"
+                                       class="sale-order-list-change-payment" id="38696/1">
+                                        сменить способ оплаты </a>
+
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12 sale-order-list-button-container">
+                                    <a class="sale-order-list-button" target="_blank"
+                                       href="https://khv.mf-group.ru/personal/order/payment?ORDER_ID=38696&amp;PAYMENT_ID=38696/1">
+                                        Оплатить </a>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12 sale-order-list-inner-row-template">
+                                <a class="sale-order-list-cancel-payment">
+                                    <i class="fa fa-long-arrow-left"></i> назад </a>
+                            </div>
+                        </div>
+                        <div class="sale-order-list-inner-title-line">
+                            <span class="sale-order-list-inner-title-line-item">Доставка</span>
+                            <span class="sale-order-list-inner-title-line-border"></span>
+                        </div>
+                        <div class="row sale-order-list-inner-row">
+                            <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-shipment">
+                                <div class="sale-order-list-shipment-title">
+                                        <span class="sale-order-list-shipment-element">
+                                            Отгрузка										№38696/2, стоимость доставки 0 ₽									</span>
+                                    <span class="sale-order-list-status-alert">Не отгружено</span>
+                                </div>
+
+                                <div class="sale-order-list-shipment-status">
+                                    <span class="sale-order-list-shipment-status-item">Статус отгрузки:</span>
+                                    <span class="sale-order-list-shipment-status-block">Ожидает обработки</span>
+                                </div>
+
+                                <div class="sale-order-list-shipment-item">
+                                    Служба доставки:
+                                    Самовывоз
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sale-order-list-top-border hidden-desktop"></div>
+                        <div class="row sale-order-list-inner-row">
+                            <div class="sale-order-list-top-border hidden-mobile hidden-tablet"></div>
+                            <div class="col-md-8  col-sm-12 sale-order-list-about-container">
+                                <a class="sale-order-list-about-link" href="https://khv.mf-group.ru/personal/orders/38696">Подробнее
+                                    о заказе</a>
+                            </div>
+                            <div class="col-md-2 col-sm-12 sale-order-list-repeat-container">
+                                <a class="sale-order-list-repeat-link"
+                                   href="https://khv.mf-group.ru/personal/orders/?COPY_ORDER=Y&amp;ID=38696">
+                                    <svg class="repeat_icon hidden-desktop" width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_78_9127)">
+                                            <path d="M6.69444 4C6.6231 3.99909 6.55399 4.02484 6.50064 4.0722C6.44729 4.11957 6.41353 4.18514 6.40598 4.25608C6.34868 4.91929 6.06645 5.54299 5.60607 6.02379C5.14569 6.5046 4.53481 6.81362 3.87472 6.89963C3.21463 6.98564 2.54496 6.84347 1.97675 6.4967C1.40853 6.14992 0.975898 5.61936 0.750568 4.99299C0.525238 4.36661 0.520747 3.68204 0.737839 3.05276C0.954931 2.42348 1.38057 1.88729 1.94418 1.53309C2.5078 1.17889 3.17554 1.02795 3.83671 1.10529C4.49787 1.18263 5.11275 1.48361 5.5794 1.95833H4.77673C4.69938 1.95833 4.62519 1.98906 4.57049 2.04376C4.51579 2.09846 4.48506 2.17265 4.48506 2.25C4.48506 2.32735 4.51579 2.40154 4.57049 2.45624C4.62519 2.51094 4.69938 2.54167 4.77673 2.54167H5.9434C6.09811 2.54167 6.24648 2.48021 6.35588 2.37081C6.46527 2.26142 6.52673 2.11304 6.52673 1.95833V0.791667C6.52673 0.714312 6.496 0.640125 6.4413 0.585427C6.38661 0.530729 6.31242 0.5 6.23506 0.5C6.15771 0.5 6.08352 0.530729 6.02883 0.585427C5.97413 0.640125 5.9434 0.714312 5.9434 0.791667V1.49604C5.37493 0.942178 4.63502 0.598083 3.84517 0.520261C3.05532 0.442439 2.26248 0.635516 1.59685 1.06779C0.931224 1.50006 0.432371 2.14583 0.182215 2.89905C-0.0679421 3.65227 -0.054533 4.46817 0.22024 5.21276C0.495013 5.95735 1.01482 6.58638 1.69429 6.99654C2.37376 7.40671 3.17252 7.57363 3.95939 7.46989C4.74625 7.36616 5.47446 6.99794 6.02442 6.42569C6.57438 5.85345 6.9134 5.1112 6.98582 4.32083C6.98958 4.28024 6.98485 4.23931 6.97194 4.20064C6.95902 4.16198 6.93819 4.12642 6.91079 4.09624C6.88338 4.06607 6.84999 4.04192 6.81274 4.02535C6.77549 4.00878 6.73521 4.00015 6.69444 4Z" fill="#009CDE" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_78_9127">
+                                                <rect width="7" height="7" fill="white" transform="translate(0 0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span class="repeat_text">Повторить заказ</span>
+                                </a>
+                            </div>
+                            <div class="col-md-2 col-sm-12 sale-order-list-cancel-container">
+                                <a class="sale-order-list-cancel-link"
+                                   href="https://khv.mf-group.ru/personal/cancel/38696?CANCEL=Y">Отменить заказ</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12 sale-order-list-inner-container">
-						<span class="sale-order-list-inner-title-line">
-							<span class="sale-order-list-inner-title-line-item">Оплата</span>
-							<span class="sale-order-list-inner-title-line-border"></span>
-						</span>
-                    <div class="row sale-order-list-inner-row">
+            <div class="col-md-12 col-sm-12 sale-order-list-container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 sale-order-list-title-container">
+                        <h2 class="sale-order-list-title">
+                            Заказ №35979 от 28.11.2023,
+                            1 товар на сумму 1 532.72 ₽ </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 sale-order-list-inner-container">
+                            <span class="sale-order-list-inner-title-line">
+                                <span class="sale-order-list-inner-title-line-item">Оплата</span>
+                                <span class="sale-order-list-inner-title-line-border"></span>
+                            </span>
+                        <div class="row sale-order-list-inner-row">
 
-                        <div class="sale-order-list-inner-row-body">
-                            <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-payment">
-                                <div class="sale-order-list-payment-title">
-                                    Счет №38696/1 от 23.04.2024, <span class="sale-order-list-payment-title-element">Оплата по счету</span>
-                                    <span class="sale-order-list-status-alert">Не оплачено</span>
+                            <div class="sale-order-list-inner-row-body">
+                                <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-payment">
+                                    <div class="sale-order-list-payment-title">
+                                        Счет №35979/1 от 28.11.2023, <span class="sale-order-list-payment-title-element">Оплата по счету</span>
+                                        <span class="sale-order-list-status-alert">Не оплачено</span>
+                                    </div>
+                                    <div class="sale-order-list-payment-price">
+                                        <span class="sale-order-list-payment-element">Сумма к оплате по счету:</span>
+
+                                        <span class="sale-order-list-payment-number">1 532.72 ₽</span>
+                                    </div>
+                                    <a href="https://khv.mf-group.ru/personal/orders/#"
+                                       class="sale-order-list-change-payment" id="35979/1">
+                                        сменить способ оплаты </a>
+
                                 </div>
-                                <div class="sale-order-list-payment-price">
-                                    <span class="sale-order-list-payment-element">Сумма к оплате по счету:</span>
-
-                                    <span class="sale-order-list-payment-number">3 650 ₽</span>
+                                <div class="col-md-3 col-sm-4 col-xs-12 sale-order-list-button-container">
+                                    <a class="sale-order-list-button" target="_blank"
+                                       href="https://khv.mf-group.ru/personal/order/payment?ORDER_ID=35979&amp;PAYMENT_ID=35979/1">
+                                        Оплатить </a>
                                 </div>
-                                <a href="https://khv.mf-group.ru/personal/orders/#"
-                                   class="sale-order-list-change-payment" id="38696/1">
-                                    сменить способ оплаты </a>
 
                             </div>
-                            <div class="col-md-3 col-sm-4 col-xs-12 sale-order-list-button-container">
-                                <a class="sale-order-list-button" target="_blank"
-                                   href="https://khv.mf-group.ru/personal/order/payment?ORDER_ID=38696&amp;PAYMENT_ID=38696/1">
-                                    Оплатить </a>
+                            <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12 sale-order-list-inner-row-template">
+                                <a class="sale-order-list-cancel-payment">
+                                    <i class="fa fa-long-arrow-left"></i> назад </a>
                             </div>
-
                         </div>
-                        <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12 sale-order-list-inner-row-template">
-                            <a class="sale-order-list-cancel-payment">
-                                <i class="fa fa-long-arrow-left"></i> назад </a>
+                        <div class="sale-order-list-inner-title-line">
+                            <span class="sale-order-list-inner-title-line-item">Доставка</span>
+                            <span class="sale-order-list-inner-title-line-border"></span>
+                        </div>
+                        <div class="row sale-order-list-inner-row">
+                            <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-shipment">
+                                <div class="sale-order-list-shipment-title">
+                                        <span class="sale-order-list-shipment-element">
+                                            Отгрузка										№35979/2, стоимость доставки 0 ₽									</span>
+                                    <span class="sale-order-list-status-alert">Не отгружено</span>
+                                </div>
+
+                                <div class="sale-order-list-shipment-status">
+                                    <span class="sale-order-list-shipment-status-item">Статус отгрузки:</span>
+                                    <span class="sale-order-list-shipment-status-block">Ожидает обработки</span>
+                                </div>
+
+                                <div class="sale-order-list-shipment-item">
+                                    Служба доставки:
+                                    Самовывоз
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sale-order-list-top-border hidden-desktop"></div>
+                        <div class="row sale-order-list-inner-row">
+                            <div class="sale-order-list-top-border hidden-mobile hidden-tablet"></div>
+                            <div class="col-md-8  col-sm-12 sale-order-list-about-container">
+                                <a class="sale-order-list-about-link" href="https://khv.mf-group.ru/personal/orders/35979">Подробнее
+                                    о заказе</a>
+                            </div>
+                            <div class="col-md-2 col-sm-12 sale-order-list-repeat-container">
+                                <a class="sale-order-list-repeat-link"
+                                   href="https://khv.mf-group.ru/personal/orders/?COPY_ORDER=Y&amp;ID=35979">
+                                    <svg class="repeat_icon hidden-desktop" width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_78_9127)">
+                                            <path d="M6.69444 4C6.6231 3.99909 6.55399 4.02484 6.50064 4.0722C6.44729 4.11957 6.41353 4.18514 6.40598 4.25608C6.34868 4.91929 6.06645 5.54299 5.60607 6.02379C5.14569 6.5046 4.53481 6.81362 3.87472 6.89963C3.21463 6.98564 2.54496 6.84347 1.97675 6.4967C1.40853 6.14992 0.975898 5.61936 0.750568 4.99299C0.525238 4.36661 0.520747 3.68204 0.737839 3.05276C0.954931 2.42348 1.38057 1.88729 1.94418 1.53309C2.5078 1.17889 3.17554 1.02795 3.83671 1.10529C4.49787 1.18263 5.11275 1.48361 5.5794 1.95833H4.77673C4.69938 1.95833 4.62519 1.98906 4.57049 2.04376C4.51579 2.09846 4.48506 2.17265 4.48506 2.25C4.48506 2.32735 4.51579 2.40154 4.57049 2.45624C4.62519 2.51094 4.69938 2.54167 4.77673 2.54167H5.9434C6.09811 2.54167 6.24648 2.48021 6.35588 2.37081C6.46527 2.26142 6.52673 2.11304 6.52673 1.95833V0.791667C6.52673 0.714312 6.496 0.640125 6.4413 0.585427C6.38661 0.530729 6.31242 0.5 6.23506 0.5C6.15771 0.5 6.08352 0.530729 6.02883 0.585427C5.97413 0.640125 5.9434 0.714312 5.9434 0.791667V1.49604C5.37493 0.942178 4.63502 0.598083 3.84517 0.520261C3.05532 0.442439 2.26248 0.635516 1.59685 1.06779C0.931224 1.50006 0.432371 2.14583 0.182215 2.89905C-0.0679421 3.65227 -0.054533 4.46817 0.22024 5.21276C0.495013 5.95735 1.01482 6.58638 1.69429 6.99654C2.37376 7.40671 3.17252 7.57363 3.95939 7.46989C4.74625 7.36616 5.47446 6.99794 6.02442 6.42569C6.57438 5.85345 6.9134 5.1112 6.98582 4.32083C6.98958 4.28024 6.98485 4.23931 6.97194 4.20064C6.95902 4.16198 6.93819 4.12642 6.91079 4.09624C6.88338 4.06607 6.84999 4.04192 6.81274 4.02535C6.77549 4.00878 6.73521 4.00015 6.69444 4Z" fill="#009CDE" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_78_9127">
+                                                <rect width="7" height="7" fill="white" transform="translate(0 0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span class="repeat_text">Повторить заказ</span>
+                                </a>
+                            </div>
+                            <div class="col-md-2 col-sm-12 sale-order-list-cancel-container">
+                                <a class="sale-order-list-cancel-link"
+                                   href="https://khv.mf-group.ru/personal/cancel/35979?CANCEL=Y">Отменить заказ</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="sale-order-list-inner-title-line">
-                        <span class="sale-order-list-inner-title-line-item">Доставка</span>
-                        <span class="sale-order-list-inner-title-line-border"></span>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 sale-order-list-container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 sale-order-list-title-container">
+                        <h2 class="sale-order-list-title">
+                            Заказ №35675 от 14.11.2023,
+                            1 товар на сумму 17 592 ₽ </h2>
                     </div>
-                    <div class="row sale-order-list-inner-row">
-                        <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-shipment">
-                            <div class="sale-order-list-shipment-title">
-									<span class="sale-order-list-shipment-element">
-										Отгрузка										№38696/2, стоимость доставки 0 ₽									</span>
-                                <span class="sale-order-list-status-alert">Не отгружено</span>
-                            </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 sale-order-list-inner-container">
+                            <span class="sale-order-list-inner-title-line">
+                                <span class="sale-order-list-inner-title-line-item">Оплата</span>
+                                <span class="sale-order-list-inner-title-line-border"></span>
+                            </span>
+                        <div class="row sale-order-list-inner-row">
 
-                            <div class="sale-order-list-shipment-status">
-                                <span class="sale-order-list-shipment-status-item">Статус отгрузки:</span>
-                                <span class="sale-order-list-shipment-status-block">Ожидает обработки</span>
-                            </div>
+                            <div class="sale-order-list-inner-row-body">
+                                <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-payment">
+                                    <div class="sale-order-list-payment-title">
+                                        Счет №35675/1 от 14.11.2023, <span class="sale-order-list-payment-title-element">Оплата по счету</span>
+                                        <span class="sale-order-list-status-alert">Не оплачено</span>
+                                    </div>
+                                    <div class="sale-order-list-payment-price">
+                                        <span class="sale-order-list-payment-element">Сумма к оплате по счету:</span>
 
-                            <div class="sale-order-list-shipment-item">
-                                Служба доставки:
-                                Самовывоз
+                                        <span class="sale-order-list-payment-number">17 592 ₽</span>
+                                    </div>
+                                    <a href="https://khv.mf-group.ru/personal/orders/#"
+                                       class="sale-order-list-change-payment" id="35675/1">
+                                        сменить способ оплаты </a>
+
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12 sale-order-list-button-container">
+                                    <a class="sale-order-list-button" target="_blank"
+                                       href="https://khv.mf-group.ru/personal/order/payment?ORDER_ID=35675&amp;PAYMENT_ID=35675/1">
+                                        Оплатить </a>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12 sale-order-list-inner-row-template">
+                                <a class="sale-order-list-cancel-payment">
+                                    <i class="fa fa-long-arrow-left"></i> назад </a>
+                            </div>
+                        </div>
+                        <div class="sale-order-list-inner-title-line">
+                            <span class="sale-order-list-inner-title-line-item">Доставка</span>
+                            <span class="sale-order-list-inner-title-line-border"></span>
+                        </div>
+                        <div class="row sale-order-list-inner-row">
+                            <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-shipment">
+                                <div class="sale-order-list-shipment-title">
+                                        <span class="sale-order-list-shipment-element">
+                                            Отгрузка										№35675/2, стоимость доставки 0 ₽									</span>
+                                    <span class="sale-order-list-status-alert">Не отгружено</span>
+                                </div>
+
+                                <div class="sale-order-list-shipment-status">
+                                    <span class="sale-order-list-shipment-status-item">Статус отгрузки:</span>
+                                    <span class="sale-order-list-shipment-status-block">Ожидает обработки</span>
+                                </div>
+
+                                <div class="sale-order-list-shipment-item">
+                                    Служба доставки:
+                                    Самовывоз
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sale-order-list-top-border hidden-desktop"></div>
+                        <div class="row sale-order-list-inner-row">
+                            <div class="sale-order-list-top-border hidden-mobile hidden-tablet"></div>
+                            <div class="col-md-8  col-sm-12 sale-order-list-about-container">
+                                <a class="sale-order-list-about-link" href="https://khv.mf-group.ru/personal/orders/35675">Подробнее
+                                    о заказе</a>
+                            </div>
+                            <div class="col-md-2 col-sm-12 sale-order-list-repeat-container">
+                                <a class="sale-order-list-repeat-link"
+                                   href="https://khv.mf-group.ru/personal/orders/?COPY_ORDER=Y&amp;ID=35675">
+                                    <svg class="repeat_icon hidden-desktop" width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_78_9127)">
+                                            <path d="M6.69444 4C6.6231 3.99909 6.55399 4.02484 6.50064 4.0722C6.44729 4.11957 6.41353 4.18514 6.40598 4.25608C6.34868 4.91929 6.06645 5.54299 5.60607 6.02379C5.14569 6.5046 4.53481 6.81362 3.87472 6.89963C3.21463 6.98564 2.54496 6.84347 1.97675 6.4967C1.40853 6.14992 0.975898 5.61936 0.750568 4.99299C0.525238 4.36661 0.520747 3.68204 0.737839 3.05276C0.954931 2.42348 1.38057 1.88729 1.94418 1.53309C2.5078 1.17889 3.17554 1.02795 3.83671 1.10529C4.49787 1.18263 5.11275 1.48361 5.5794 1.95833H4.77673C4.69938 1.95833 4.62519 1.98906 4.57049 2.04376C4.51579 2.09846 4.48506 2.17265 4.48506 2.25C4.48506 2.32735 4.51579 2.40154 4.57049 2.45624C4.62519 2.51094 4.69938 2.54167 4.77673 2.54167H5.9434C6.09811 2.54167 6.24648 2.48021 6.35588 2.37081C6.46527 2.26142 6.52673 2.11304 6.52673 1.95833V0.791667C6.52673 0.714312 6.496 0.640125 6.4413 0.585427C6.38661 0.530729 6.31242 0.5 6.23506 0.5C6.15771 0.5 6.08352 0.530729 6.02883 0.585427C5.97413 0.640125 5.9434 0.714312 5.9434 0.791667V1.49604C5.37493 0.942178 4.63502 0.598083 3.84517 0.520261C3.05532 0.442439 2.26248 0.635516 1.59685 1.06779C0.931224 1.50006 0.432371 2.14583 0.182215 2.89905C-0.0679421 3.65227 -0.054533 4.46817 0.22024 5.21276C0.495013 5.95735 1.01482 6.58638 1.69429 6.99654C2.37376 7.40671 3.17252 7.57363 3.95939 7.46989C4.74625 7.36616 5.47446 6.99794 6.02442 6.42569C6.57438 5.85345 6.9134 5.1112 6.98582 4.32083C6.98958 4.28024 6.98485 4.23931 6.97194 4.20064C6.95902 4.16198 6.93819 4.12642 6.91079 4.09624C6.88338 4.06607 6.84999 4.04192 6.81274 4.02535C6.77549 4.00878 6.73521 4.00015 6.69444 4Z" fill="#009CDE" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_78_9127">
+                                                <rect width="7" height="7" fill="white" transform="translate(0 0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span class="repeat_text">Повторить заказ</span></a>
+                            </div>
+                            <div class="col-md-2 col-sm-12 sale-order-list-cancel-container">
+                                <a class="sale-order-list-cancel-link"
+                                   href="https://khv.mf-group.ru/personal/cancel/35675?CANCEL=Y">Отменить заказ</a>
                             </div>
                         </div>
                     </div>
-                    <div class="row sale-order-list-inner-row">
-                        <div class="sale-order-list-top-border"></div>
-                        <div class="col-md-8  col-sm-12 sale-order-list-about-container">
-                            <a class="sale-order-list-about-link" href="https://khv.mf-group.ru/personal/orders/38696">Подробнее
-                                о заказе</a>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 sale-order-list-container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 sale-order-list-title-container">
+                        <h2 class="sale-order-list-title">
+                            Заказ №34951 от 11.10.2023,
+                            2 товара на сумму 17 770.32 ₽ </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 sale-order-list-inner-container">
+                            <span class="sale-order-list-inner-title-line">
+                                <span class="sale-order-list-inner-title-line-item">Оплата</span>
+                                <span class="sale-order-list-inner-title-line-border"></span>
+                            </span>
+                        <div class="row sale-order-list-inner-row">
+
+                            <div class="sale-order-list-inner-row-body">
+                                <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-payment">
+                                    <div class="sale-order-list-payment-title">
+                                        Счет №34951/1 от 11.10.2023, <span class="sale-order-list-payment-title-element">Оплата по счету</span>
+                                        <span class="sale-order-list-status-alert">Не оплачено</span>
+                                    </div>
+                                    <div class="sale-order-list-payment-price">
+                                        <span class="sale-order-list-payment-element">Сумма к оплате по счету:</span>
+
+                                        <span class="sale-order-list-payment-number">17 770.32 ₽</span>
+                                    </div>
+                                    <a href="https://khv.mf-group.ru/personal/orders/#"
+                                       class="sale-order-list-change-payment" id="34951/1">
+                                        сменить способ оплаты </a>
+
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12 sale-order-list-button-container">
+                                    <a class="sale-order-list-button" target="_blank"
+                                       href="https://khv.mf-group.ru/personal/order/payment?ORDER_ID=34951&amp;PAYMENT_ID=34951/1">
+                                        Оплатить </a>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12 sale-order-list-inner-row-template">
+                                <a class="sale-order-list-cancel-payment">
+                                    <i class="fa fa-long-arrow-left"></i> назад </a>
+                            </div>
                         </div>
-                        <div class="col-md-2 col-sm-12 sale-order-list-repeat-container">
-                            <a class="sale-order-list-repeat-link"
-                               href="https://khv.mf-group.ru/personal/orders/?COPY_ORDER=Y&amp;ID=38696">Повторить
-                                заказ</a>
+                        <div class="sale-order-list-inner-title-line">
+                            <span class="sale-order-list-inner-title-line-item">Доставка</span>
+                            <span class="sale-order-list-inner-title-line-border"></span>
                         </div>
-                        <div class="col-md-2 col-sm-12 sale-order-list-cancel-container">
-                            <a class="sale-order-list-cancel-link"
-                               href="https://khv.mf-group.ru/personal/cancel/38696?CANCEL=Y">Отменить заказ</a>
+                        <div class="row sale-order-list-inner-row">
+                            <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-shipment">
+                                <div class="sale-order-list-shipment-title">
+                                        <span class="sale-order-list-shipment-element">
+                                            Отгрузка										№34951/2, стоимость доставки 0 ₽									</span>
+                                    <span class="sale-order-list-status-alert">Не отгружено</span>
+                                </div>
+
+                                <div class="sale-order-list-shipment-status">
+                                    <span class="sale-order-list-shipment-status-item">Статус отгрузки:</span>
+                                    <span class="sale-order-list-shipment-status-block">Ожидает обработки</span>
+                                </div>
+
+                                <div class="sale-order-list-shipment-item">
+                                    Служба доставки:
+                                    Самовывоз
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sale-order-list-top-border hidden-desktop"></div>
+                        <div class="row sale-order-list-inner-row">
+                            <div class="sale-order-list-top-border hidden-mobile hidden-tablet"></div>
+                            <div class="col-md-8  col-sm-12 sale-order-list-about-container">
+                                <a class="sale-order-list-about-link" href="https://khv.mf-group.ru/personal/orders/34951">Подробнее
+                                    о заказе</a>
+                            </div>
+                            <div class="col-md-2 col-sm-12 sale-order-list-repeat-container">
+                                <a class="sale-order-list-repeat-link"
+                                   href="https://khv.mf-group.ru/personal/orders/?COPY_ORDER=Y&amp;ID=34951">
+                                    <svg class="repeat_icon hidden-desktop" width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_78_9127)">
+                                            <path d="M6.69444 4C6.6231 3.99909 6.55399 4.02484 6.50064 4.0722C6.44729 4.11957 6.41353 4.18514 6.40598 4.25608C6.34868 4.91929 6.06645 5.54299 5.60607 6.02379C5.14569 6.5046 4.53481 6.81362 3.87472 6.89963C3.21463 6.98564 2.54496 6.84347 1.97675 6.4967C1.40853 6.14992 0.975898 5.61936 0.750568 4.99299C0.525238 4.36661 0.520747 3.68204 0.737839 3.05276C0.954931 2.42348 1.38057 1.88729 1.94418 1.53309C2.5078 1.17889 3.17554 1.02795 3.83671 1.10529C4.49787 1.18263 5.11275 1.48361 5.5794 1.95833H4.77673C4.69938 1.95833 4.62519 1.98906 4.57049 2.04376C4.51579 2.09846 4.48506 2.17265 4.48506 2.25C4.48506 2.32735 4.51579 2.40154 4.57049 2.45624C4.62519 2.51094 4.69938 2.54167 4.77673 2.54167H5.9434C6.09811 2.54167 6.24648 2.48021 6.35588 2.37081C6.46527 2.26142 6.52673 2.11304 6.52673 1.95833V0.791667C6.52673 0.714312 6.496 0.640125 6.4413 0.585427C6.38661 0.530729 6.31242 0.5 6.23506 0.5C6.15771 0.5 6.08352 0.530729 6.02883 0.585427C5.97413 0.640125 5.9434 0.714312 5.9434 0.791667V1.49604C5.37493 0.942178 4.63502 0.598083 3.84517 0.520261C3.05532 0.442439 2.26248 0.635516 1.59685 1.06779C0.931224 1.50006 0.432371 2.14583 0.182215 2.89905C-0.0679421 3.65227 -0.054533 4.46817 0.22024 5.21276C0.495013 5.95735 1.01482 6.58638 1.69429 6.99654C2.37376 7.40671 3.17252 7.57363 3.95939 7.46989C4.74625 7.36616 5.47446 6.99794 6.02442 6.42569C6.57438 5.85345 6.9134 5.1112 6.98582 4.32083C6.98958 4.28024 6.98485 4.23931 6.97194 4.20064C6.95902 4.16198 6.93819 4.12642 6.91079 4.09624C6.88338 4.06607 6.84999 4.04192 6.81274 4.02535C6.77549 4.00878 6.73521 4.00015 6.69444 4Z" fill="#009CDE" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_78_9127">
+                                                <rect width="7" height="7" fill="white" transform="translate(0 0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span class="repeat_text">Повторить заказ</span></a>
+                            </div>
+                            <div class="col-md-2 col-sm-12 sale-order-list-cancel-container">
+                                <a class="sale-order-list-cancel-link"
+                                   href="https://khv.mf-group.ru/personal/cancel/34951?CANCEL=Y">Отменить заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 sale-order-list-container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 sale-order-list-title-container">
+                        <h2 class="sale-order-list-title">
+                            Заказ №33868 от 17.08.2023,
+                            1 товар на сумму 113.85 ₽ </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 sale-order-list-inner-container">
+                            <span class="sale-order-list-inner-title-line">
+                                <span class="sale-order-list-inner-title-line-item">Оплата</span>
+                                <span class="sale-order-list-inner-title-line-border"></span>
+                            </span>
+                        <div class="row sale-order-list-inner-row">
+
+                            <div class="sale-order-list-inner-row-body">
+                                <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-payment">
+                                    <div class="sale-order-list-payment-title">
+                                        Счет №33868/1 от 17.08.2023, <span class="sale-order-list-payment-title-element">Оплата по счету</span>
+                                        <span class="sale-order-list-status-alert">Не оплачено</span>
+                                    </div>
+                                    <div class="sale-order-list-payment-price">
+                                        <span class="sale-order-list-payment-element">Сумма к оплате по счету:</span>
+
+                                        <span class="sale-order-list-payment-number">113.85 ₽</span>
+                                    </div>
+                                    <a href="https://khv.mf-group.ru/personal/orders/#"
+                                       class="sale-order-list-change-payment" id="33868/1">
+                                        сменить способ оплаты </a>
+
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12 sale-order-list-button-container">
+                                    <a class="sale-order-list-button" target="_blank"
+                                       href="https://khv.mf-group.ru/personal/order/payment?ORDER_ID=33868&amp;PAYMENT_ID=33868/1">
+                                        Оплатить </a>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12 sale-order-list-inner-row-template">
+                                <a class="sale-order-list-cancel-payment">
+                                    <i class="fa fa-long-arrow-left"></i> назад </a>
+                            </div>
+                        </div>
+                        <div class="sale-order-list-inner-title-line">
+                            <span class="sale-order-list-inner-title-line-item">Доставка</span>
+                            <span class="sale-order-list-inner-title-line-border"></span>
+                        </div>
+                        <div class="row sale-order-list-inner-row">
+                            <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-shipment">
+                                <div class="sale-order-list-shipment-title">
+                                        <span class="sale-order-list-shipment-element">
+                                            Отгрузка										№33868/2, стоимость доставки 0 ₽									</span>
+                                    <span class="sale-order-list-status-alert">Не отгружено</span>
+                                </div>
+
+                                <div class="sale-order-list-shipment-status">
+                                    <span class="sale-order-list-shipment-status-item">Статус отгрузки:</span>
+                                    <span class="sale-order-list-shipment-status-block">Ожидает обработки</span>
+                                </div>
+
+                                <div class="sale-order-list-shipment-item">
+                                    Служба доставки:
+                                    Самовывоз
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sale-order-list-top-border hidden-desktop"></div>
+                        <div class="row sale-order-list-inner-row">
+                            <div class="sale-order-list-top-border hidden-mobile hidden-tablet"></div>
+                            <div class="col-md-8  col-sm-12 sale-order-list-about-container">
+                                <a class="sale-order-list-about-link" href="https://khv.mf-group.ru/personal/orders/33868">Подробнее
+                                    о заказе</a>
+                            </div>
+                            <div class="col-md-2 col-sm-12 sale-order-list-repeat-container">
+                                <a class="sale-order-list-repeat-link"
+                                   href="https://khv.mf-group.ru/personal/orders/?COPY_ORDER=Y&amp;ID=33868">
+                                    <svg class="repeat_icon hidden-desktop" width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_78_9127)">
+                                            <path d="M6.69444 4C6.6231 3.99909 6.55399 4.02484 6.50064 4.0722C6.44729 4.11957 6.41353 4.18514 6.40598 4.25608C6.34868 4.91929 6.06645 5.54299 5.60607 6.02379C5.14569 6.5046 4.53481 6.81362 3.87472 6.89963C3.21463 6.98564 2.54496 6.84347 1.97675 6.4967C1.40853 6.14992 0.975898 5.61936 0.750568 4.99299C0.525238 4.36661 0.520747 3.68204 0.737839 3.05276C0.954931 2.42348 1.38057 1.88729 1.94418 1.53309C2.5078 1.17889 3.17554 1.02795 3.83671 1.10529C4.49787 1.18263 5.11275 1.48361 5.5794 1.95833H4.77673C4.69938 1.95833 4.62519 1.98906 4.57049 2.04376C4.51579 2.09846 4.48506 2.17265 4.48506 2.25C4.48506 2.32735 4.51579 2.40154 4.57049 2.45624C4.62519 2.51094 4.69938 2.54167 4.77673 2.54167H5.9434C6.09811 2.54167 6.24648 2.48021 6.35588 2.37081C6.46527 2.26142 6.52673 2.11304 6.52673 1.95833V0.791667C6.52673 0.714312 6.496 0.640125 6.4413 0.585427C6.38661 0.530729 6.31242 0.5 6.23506 0.5C6.15771 0.5 6.08352 0.530729 6.02883 0.585427C5.97413 0.640125 5.9434 0.714312 5.9434 0.791667V1.49604C5.37493 0.942178 4.63502 0.598083 3.84517 0.520261C3.05532 0.442439 2.26248 0.635516 1.59685 1.06779C0.931224 1.50006 0.432371 2.14583 0.182215 2.89905C-0.0679421 3.65227 -0.054533 4.46817 0.22024 5.21276C0.495013 5.95735 1.01482 6.58638 1.69429 6.99654C2.37376 7.40671 3.17252 7.57363 3.95939 7.46989C4.74625 7.36616 5.47446 6.99794 6.02442 6.42569C6.57438 5.85345 6.9134 5.1112 6.98582 4.32083C6.98958 4.28024 6.98485 4.23931 6.97194 4.20064C6.95902 4.16198 6.93819 4.12642 6.91079 4.09624C6.88338 4.06607 6.84999 4.04192 6.81274 4.02535C6.77549 4.00878 6.73521 4.00015 6.69444 4Z" fill="#009CDE" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_78_9127">
+                                                <rect width="7" height="7" fill="white" transform="translate(0 0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span class="repeat_text">Повторить заказ</span></a>
+                            </div>
+                            <div class="col-md-2 col-sm-12 sale-order-list-cancel-container">
+                                <a class="sale-order-list-cancel-link"
+                                   href="https://khv.mf-group.ru/personal/cancel/33868?CANCEL=Y">Отменить заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 sale-order-list-container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 sale-order-list-title-container">
+                        <h2 class="sale-order-list-title">
+                            Заказ №33867 от 17.08.2023,
+                            1 товар на сумму 5 519.62 ₽ </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 sale-order-list-inner-container">
+                            <span class="sale-order-list-inner-title-line">
+                                <span class="sale-order-list-inner-title-line-item">Оплата</span>
+                                <span class="sale-order-list-inner-title-line-border"></span>
+                            </span>
+                        <div class="row sale-order-list-inner-row">
+
+                            <div class="sale-order-list-inner-row-body">
+                                <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-payment">
+                                    <div class="sale-order-list-payment-title">
+                                        Счет №33867/1 от 17.08.2023, <span class="sale-order-list-payment-title-element">Оплата по счету</span>
+                                        <span class="sale-order-list-status-alert">Не оплачено</span>
+                                    </div>
+                                    <div class="sale-order-list-payment-price">
+                                        <span class="sale-order-list-payment-element">Сумма к оплате по счету:</span>
+
+                                        <span class="sale-order-list-payment-number">5 519.62 ₽</span>
+                                    </div>
+                                    <a href="https://khv.mf-group.ru/personal/orders/#"
+                                       class="sale-order-list-change-payment" id="33867/1">
+                                        сменить способ оплаты </a>
+
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12 sale-order-list-button-container">
+                                    <a class="sale-order-list-button" target="_blank"
+                                       href="https://khv.mf-group.ru/personal/order/payment?ORDER_ID=33867&amp;PAYMENT_ID=33867/1">
+                                        Оплатить </a>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12 sale-order-list-inner-row-template">
+                                <a class="sale-order-list-cancel-payment">
+                                    <i class="fa fa-long-arrow-left"></i> назад </a>
+                            </div>
+                        </div>
+                        <div class="sale-order-list-inner-title-line">
+                            <span class="sale-order-list-inner-title-line-item">Доставка</span>
+                            <span class="sale-order-list-inner-title-line-border"></span>
+                        </div>
+                        <div class="row sale-order-list-inner-row">
+                            <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-shipment">
+                                <div class="sale-order-list-shipment-title">
+                                        <span class="sale-order-list-shipment-element">
+                                            Отгрузка										№33867/2, стоимость доставки 0 ₽									</span>
+                                    <span class="sale-order-list-status-alert">Не отгружено</span>
+                                </div>
+
+                                <div class="sale-order-list-shipment-status">
+                                    <span class="sale-order-list-shipment-status-item">Статус отгрузки:</span>
+                                    <span class="sale-order-list-shipment-status-block">Ожидает обработки</span>
+                                </div>
+
+                                <div class="sale-order-list-shipment-item">
+                                    Служба доставки:
+                                    Самовывоз
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sale-order-list-top-border hidden-desktop"></div>
+                        <div class="row sale-order-list-inner-row">
+                            <div class="sale-order-list-top-border hidden-mobile hidden-tablet"></div>
+                            <div class="col-md-8  col-sm-12 sale-order-list-about-container">
+                                <a class="sale-order-list-about-link" href="https://khv.mf-group.ru/personal/orders/33867">Подробнее
+                                    о заказе</a>
+                            </div>
+                            <div class="col-md-2 col-sm-12 sale-order-list-repeat-container">
+                                <a class="sale-order-list-repeat-link"
+                                   href="https://khv.mf-group.ru/personal/orders/?COPY_ORDER=Y&amp;ID=33867">
+                                    <svg class="repeat_icon hidden-desktop" width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_78_9127)">
+                                            <path d="M6.69444 4C6.6231 3.99909 6.55399 4.02484 6.50064 4.0722C6.44729 4.11957 6.41353 4.18514 6.40598 4.25608C6.34868 4.91929 6.06645 5.54299 5.60607 6.02379C5.14569 6.5046 4.53481 6.81362 3.87472 6.89963C3.21463 6.98564 2.54496 6.84347 1.97675 6.4967C1.40853 6.14992 0.975898 5.61936 0.750568 4.99299C0.525238 4.36661 0.520747 3.68204 0.737839 3.05276C0.954931 2.42348 1.38057 1.88729 1.94418 1.53309C2.5078 1.17889 3.17554 1.02795 3.83671 1.10529C4.49787 1.18263 5.11275 1.48361 5.5794 1.95833H4.77673C4.69938 1.95833 4.62519 1.98906 4.57049 2.04376C4.51579 2.09846 4.48506 2.17265 4.48506 2.25C4.48506 2.32735 4.51579 2.40154 4.57049 2.45624C4.62519 2.51094 4.69938 2.54167 4.77673 2.54167H5.9434C6.09811 2.54167 6.24648 2.48021 6.35588 2.37081C6.46527 2.26142 6.52673 2.11304 6.52673 1.95833V0.791667C6.52673 0.714312 6.496 0.640125 6.4413 0.585427C6.38661 0.530729 6.31242 0.5 6.23506 0.5C6.15771 0.5 6.08352 0.530729 6.02883 0.585427C5.97413 0.640125 5.9434 0.714312 5.9434 0.791667V1.49604C5.37493 0.942178 4.63502 0.598083 3.84517 0.520261C3.05532 0.442439 2.26248 0.635516 1.59685 1.06779C0.931224 1.50006 0.432371 2.14583 0.182215 2.89905C-0.0679421 3.65227 -0.054533 4.46817 0.22024 5.21276C0.495013 5.95735 1.01482 6.58638 1.69429 6.99654C2.37376 7.40671 3.17252 7.57363 3.95939 7.46989C4.74625 7.36616 5.47446 6.99794 6.02442 6.42569C6.57438 5.85345 6.9134 5.1112 6.98582 4.32083C6.98958 4.28024 6.98485 4.23931 6.97194 4.20064C6.95902 4.16198 6.93819 4.12642 6.91079 4.09624C6.88338 4.06607 6.84999 4.04192 6.81274 4.02535C6.77549 4.00878 6.73521 4.00015 6.69444 4Z" fill="#009CDE" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_78_9127">
+                                                <rect width="7" height="7" fill="white" transform="translate(0 0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span class="repeat_text">Повторить заказ</span></a>
+                            </div>
+                            <div class="col-md-2 col-sm-12 sale-order-list-cancel-container">
+                                <a class="sale-order-list-cancel-link"
+                                   href="https://khv.mf-group.ru/personal/cancel/33867?CANCEL=Y">Отменить заказ</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-12 col-sm-12 sale-order-list-container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12 sale-order-list-title-container">
-                    <h2 class="sale-order-list-title">
-                        Заказ №35979 от 28.11.2023,
-                        1 товар на сумму 1 532.72 ₽ </h2>
+        <div class="bx-pagination hidden-desktop">
+            <div class="pagination-orders-quantity">Заказы 1 - 20 из 110</div>
+            <div class="pagination-controls">
+                <div class="pagination-controls__item">Начало</div>
+                <div class="pagination-controls__item">Пред.</div>
+                <div class="pagination-controls__item">
+                    <a class="pagination-link pagination-link--active">1</a>
+                    <a class="pagination-link">2</a>
+                    <a class="pagination-link">3</a>
+                    <a class="pagination-link">4</a>
+                    <a class="pagination-link">5</a>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 sale-order-list-inner-container">
-						<span class="sale-order-list-inner-title-line">
-							<span class="sale-order-list-inner-title-line-item">Оплата</span>
-							<span class="sale-order-list-inner-title-line-border"></span>
-						</span>
-                    <div class="row sale-order-list-inner-row">
-
-                        <div class="sale-order-list-inner-row-body">
-                            <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-payment">
-                                <div class="sale-order-list-payment-title">
-                                    Счет №35979/1 от 28.11.2023, <span class="sale-order-list-payment-title-element">Оплата по счету</span>
-                                    <span class="sale-order-list-status-alert">Не оплачено</span>
-                                </div>
-                                <div class="sale-order-list-payment-price">
-                                    <span class="sale-order-list-payment-element">Сумма к оплате по счету:</span>
-
-                                    <span class="sale-order-list-payment-number">1 532.72 ₽</span>
-                                </div>
-                                <a href="https://khv.mf-group.ru/personal/orders/#"
-                                   class="sale-order-list-change-payment" id="35979/1">
-                                    сменить способ оплаты </a>
-
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-xs-12 sale-order-list-button-container">
-                                <a class="sale-order-list-button" target="_blank"
-                                   href="https://khv.mf-group.ru/personal/order/payment?ORDER_ID=35979&amp;PAYMENT_ID=35979/1">
-                                    Оплатить </a>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12 sale-order-list-inner-row-template">
-                            <a class="sale-order-list-cancel-payment">
-                                <i class="fa fa-long-arrow-left"></i> назад </a>
-                        </div>
-                    </div>
-                    <div class="sale-order-list-inner-title-line">
-                        <span class="sale-order-list-inner-title-line-item">Доставка</span>
-                        <span class="sale-order-list-inner-title-line-border"></span>
-                    </div>
-                    <div class="row sale-order-list-inner-row">
-                        <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-shipment">
-                            <div class="sale-order-list-shipment-title">
-									<span class="sale-order-list-shipment-element">
-										Отгрузка										№35979/2, стоимость доставки 0 ₽									</span>
-                                <span class="sale-order-list-status-alert">Не отгружено</span>
-                            </div>
-
-                            <div class="sale-order-list-shipment-status">
-                                <span class="sale-order-list-shipment-status-item">Статус отгрузки:</span>
-                                <span class="sale-order-list-shipment-status-block">Ожидает обработки</span>
-                            </div>
-
-                            <div class="sale-order-list-shipment-item">
-                                Служба доставки:
-                                Самовывоз
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row sale-order-list-inner-row">
-                        <div class="sale-order-list-top-border"></div>
-                        <div class="col-md-8  col-sm-12 sale-order-list-about-container">
-                            <a class="sale-order-list-about-link" href="https://khv.mf-group.ru/personal/orders/35979">Подробнее
-                                о заказе</a>
-                        </div>
-                        <div class="col-md-2 col-sm-12 sale-order-list-repeat-container">
-                            <a class="sale-order-list-repeat-link"
-                               href="https://khv.mf-group.ru/personal/orders/?COPY_ORDER=Y&amp;ID=35979">Повторить
-                                заказ</a>
-                        </div>
-                        <div class="col-md-2 col-sm-12 sale-order-list-cancel-container">
-                            <a class="sale-order-list-cancel-link"
-                               href="https://khv.mf-group.ru/personal/cancel/35979?CANCEL=Y">Отменить заказ</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12 col-sm-12 sale-order-list-container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12 sale-order-list-title-container">
-                    <h2 class="sale-order-list-title">
-                        Заказ №35675 от 14.11.2023,
-                        1 товар на сумму 17 592 ₽ </h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 sale-order-list-inner-container">
-						<span class="sale-order-list-inner-title-line">
-							<span class="sale-order-list-inner-title-line-item">Оплата</span>
-							<span class="sale-order-list-inner-title-line-border"></span>
-						</span>
-                    <div class="row sale-order-list-inner-row">
-
-                        <div class="sale-order-list-inner-row-body">
-                            <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-payment">
-                                <div class="sale-order-list-payment-title">
-                                    Счет №35675/1 от 14.11.2023, <span class="sale-order-list-payment-title-element">Оплата по счету</span>
-                                    <span class="sale-order-list-status-alert">Не оплачено</span>
-                                </div>
-                                <div class="sale-order-list-payment-price">
-                                    <span class="sale-order-list-payment-element">Сумма к оплате по счету:</span>
-
-                                    <span class="sale-order-list-payment-number">17 592 ₽</span>
-                                </div>
-                                <a href="https://khv.mf-group.ru/personal/orders/#"
-                                   class="sale-order-list-change-payment" id="35675/1">
-                                    сменить способ оплаты </a>
-
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-xs-12 sale-order-list-button-container">
-                                <a class="sale-order-list-button" target="_blank"
-                                   href="https://khv.mf-group.ru/personal/order/payment?ORDER_ID=35675&amp;PAYMENT_ID=35675/1">
-                                    Оплатить </a>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12 sale-order-list-inner-row-template">
-                            <a class="sale-order-list-cancel-payment">
-                                <i class="fa fa-long-arrow-left"></i> назад </a>
-                        </div>
-                    </div>
-                    <div class="sale-order-list-inner-title-line">
-                        <span class="sale-order-list-inner-title-line-item">Доставка</span>
-                        <span class="sale-order-list-inner-title-line-border"></span>
-                    </div>
-                    <div class="row sale-order-list-inner-row">
-                        <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-shipment">
-                            <div class="sale-order-list-shipment-title">
-									<span class="sale-order-list-shipment-element">
-										Отгрузка										№35675/2, стоимость доставки 0 ₽									</span>
-                                <span class="sale-order-list-status-alert">Не отгружено</span>
-                            </div>
-
-                            <div class="sale-order-list-shipment-status">
-                                <span class="sale-order-list-shipment-status-item">Статус отгрузки:</span>
-                                <span class="sale-order-list-shipment-status-block">Ожидает обработки</span>
-                            </div>
-
-                            <div class="sale-order-list-shipment-item">
-                                Служба доставки:
-                                Самовывоз
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row sale-order-list-inner-row">
-                        <div class="sale-order-list-top-border"></div>
-                        <div class="col-md-8  col-sm-12 sale-order-list-about-container">
-                            <a class="sale-order-list-about-link" href="https://khv.mf-group.ru/personal/orders/35675">Подробнее
-                                о заказе</a>
-                        </div>
-                        <div class="col-md-2 col-sm-12 sale-order-list-repeat-container">
-                            <a class="sale-order-list-repeat-link"
-                               href="https://khv.mf-group.ru/personal/orders/?COPY_ORDER=Y&amp;ID=35675">Повторить
-                                заказ</a>
-                        </div>
-                        <div class="col-md-2 col-sm-12 sale-order-list-cancel-container">
-                            <a class="sale-order-list-cancel-link"
-                               href="https://khv.mf-group.ru/personal/cancel/35675?CANCEL=Y">Отменить заказ</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12 col-sm-12 sale-order-list-container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12 sale-order-list-title-container">
-                    <h2 class="sale-order-list-title">
-                        Заказ №34951 от 11.10.2023,
-                        2 товара на сумму 17 770.32 ₽ </h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 sale-order-list-inner-container">
-						<span class="sale-order-list-inner-title-line">
-							<span class="sale-order-list-inner-title-line-item">Оплата</span>
-							<span class="sale-order-list-inner-title-line-border"></span>
-						</span>
-                    <div class="row sale-order-list-inner-row">
-
-                        <div class="sale-order-list-inner-row-body">
-                            <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-payment">
-                                <div class="sale-order-list-payment-title">
-                                    Счет №34951/1 от 11.10.2023, <span class="sale-order-list-payment-title-element">Оплата по счету</span>
-                                    <span class="sale-order-list-status-alert">Не оплачено</span>
-                                </div>
-                                <div class="sale-order-list-payment-price">
-                                    <span class="sale-order-list-payment-element">Сумма к оплате по счету:</span>
-
-                                    <span class="sale-order-list-payment-number">17 770.32 ₽</span>
-                                </div>
-                                <a href="https://khv.mf-group.ru/personal/orders/#"
-                                   class="sale-order-list-change-payment" id="34951/1">
-                                    сменить способ оплаты </a>
-
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-xs-12 sale-order-list-button-container">
-                                <a class="sale-order-list-button" target="_blank"
-                                   href="https://khv.mf-group.ru/personal/order/payment?ORDER_ID=34951&amp;PAYMENT_ID=34951/1">
-                                    Оплатить </a>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12 sale-order-list-inner-row-template">
-                            <a class="sale-order-list-cancel-payment">
-                                <i class="fa fa-long-arrow-left"></i> назад </a>
-                        </div>
-                    </div>
-                    <div class="sale-order-list-inner-title-line">
-                        <span class="sale-order-list-inner-title-line-item">Доставка</span>
-                        <span class="sale-order-list-inner-title-line-border"></span>
-                    </div>
-                    <div class="row sale-order-list-inner-row">
-                        <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-shipment">
-                            <div class="sale-order-list-shipment-title">
-									<span class="sale-order-list-shipment-element">
-										Отгрузка										№34951/2, стоимость доставки 0 ₽									</span>
-                                <span class="sale-order-list-status-alert">Не отгружено</span>
-                            </div>
-
-                            <div class="sale-order-list-shipment-status">
-                                <span class="sale-order-list-shipment-status-item">Статус отгрузки:</span>
-                                <span class="sale-order-list-shipment-status-block">Ожидает обработки</span>
-                            </div>
-
-                            <div class="sale-order-list-shipment-item">
-                                Служба доставки:
-                                Самовывоз
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row sale-order-list-inner-row">
-                        <div class="sale-order-list-top-border"></div>
-                        <div class="col-md-8  col-sm-12 sale-order-list-about-container">
-                            <a class="sale-order-list-about-link" href="https://khv.mf-group.ru/personal/orders/34951">Подробнее
-                                о заказе</a>
-                        </div>
-                        <div class="col-md-2 col-sm-12 sale-order-list-repeat-container">
-                            <a class="sale-order-list-repeat-link"
-                               href="https://khv.mf-group.ru/personal/orders/?COPY_ORDER=Y&amp;ID=34951">Повторить
-                                заказ</a>
-                        </div>
-                        <div class="col-md-2 col-sm-12 sale-order-list-cancel-container">
-                            <a class="sale-order-list-cancel-link"
-                               href="https://khv.mf-group.ru/personal/cancel/34951?CANCEL=Y">Отменить заказ</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12 col-sm-12 sale-order-list-container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12 sale-order-list-title-container">
-                    <h2 class="sale-order-list-title">
-                        Заказ №33868 от 17.08.2023,
-                        1 товар на сумму 113.85 ₽ </h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 sale-order-list-inner-container">
-						<span class="sale-order-list-inner-title-line">
-							<span class="sale-order-list-inner-title-line-item">Оплата</span>
-							<span class="sale-order-list-inner-title-line-border"></span>
-						</span>
-                    <div class="row sale-order-list-inner-row">
-
-                        <div class="sale-order-list-inner-row-body">
-                            <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-payment">
-                                <div class="sale-order-list-payment-title">
-                                    Счет №33868/1 от 17.08.2023, <span class="sale-order-list-payment-title-element">Оплата по счету</span>
-                                    <span class="sale-order-list-status-alert">Не оплачено</span>
-                                </div>
-                                <div class="sale-order-list-payment-price">
-                                    <span class="sale-order-list-payment-element">Сумма к оплате по счету:</span>
-
-                                    <span class="sale-order-list-payment-number">113.85 ₽</span>
-                                </div>
-                                <a href="https://khv.mf-group.ru/personal/orders/#"
-                                   class="sale-order-list-change-payment" id="33868/1">
-                                    сменить способ оплаты </a>
-
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-xs-12 sale-order-list-button-container">
-                                <a class="sale-order-list-button" target="_blank"
-                                   href="https://khv.mf-group.ru/personal/order/payment?ORDER_ID=33868&amp;PAYMENT_ID=33868/1">
-                                    Оплатить </a>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12 sale-order-list-inner-row-template">
-                            <a class="sale-order-list-cancel-payment">
-                                <i class="fa fa-long-arrow-left"></i> назад </a>
-                        </div>
-                    </div>
-                    <div class="sale-order-list-inner-title-line">
-                        <span class="sale-order-list-inner-title-line-item">Доставка</span>
-                        <span class="sale-order-list-inner-title-line-border"></span>
-                    </div>
-                    <div class="row sale-order-list-inner-row">
-                        <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-shipment">
-                            <div class="sale-order-list-shipment-title">
-									<span class="sale-order-list-shipment-element">
-										Отгрузка										№33868/2, стоимость доставки 0 ₽									</span>
-                                <span class="sale-order-list-status-alert">Не отгружено</span>
-                            </div>
-
-                            <div class="sale-order-list-shipment-status">
-                                <span class="sale-order-list-shipment-status-item">Статус отгрузки:</span>
-                                <span class="sale-order-list-shipment-status-block">Ожидает обработки</span>
-                            </div>
-
-                            <div class="sale-order-list-shipment-item">
-                                Служба доставки:
-                                Самовывоз
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row sale-order-list-inner-row">
-                        <div class="sale-order-list-top-border"></div>
-                        <div class="col-md-8  col-sm-12 sale-order-list-about-container">
-                            <a class="sale-order-list-about-link" href="https://khv.mf-group.ru/personal/orders/33868">Подробнее
-                                о заказе</a>
-                        </div>
-                        <div class="col-md-2 col-sm-12 sale-order-list-repeat-container">
-                            <a class="sale-order-list-repeat-link"
-                               href="https://khv.mf-group.ru/personal/orders/?COPY_ORDER=Y&amp;ID=33868">Повторить
-                                заказ</a>
-                        </div>
-                        <div class="col-md-2 col-sm-12 sale-order-list-cancel-container">
-                            <a class="sale-order-list-cancel-link"
-                               href="https://khv.mf-group.ru/personal/cancel/33868?CANCEL=Y">Отменить заказ</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12 col-sm-12 sale-order-list-container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12 sale-order-list-title-container">
-                    <h2 class="sale-order-list-title">
-                        Заказ №33867 от 17.08.2023,
-                        1 товар на сумму 5 519.62 ₽ </h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 sale-order-list-inner-container">
-						<span class="sale-order-list-inner-title-line">
-							<span class="sale-order-list-inner-title-line-item">Оплата</span>
-							<span class="sale-order-list-inner-title-line-border"></span>
-						</span>
-                    <div class="row sale-order-list-inner-row">
-
-                        <div class="sale-order-list-inner-row-body">
-                            <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-payment">
-                                <div class="sale-order-list-payment-title">
-                                    Счет №33867/1 от 17.08.2023, <span class="sale-order-list-payment-title-element">Оплата по счету</span>
-                                    <span class="sale-order-list-status-alert">Не оплачено</span>
-                                </div>
-                                <div class="sale-order-list-payment-price">
-                                    <span class="sale-order-list-payment-element">Сумма к оплате по счету:</span>
-
-                                    <span class="sale-order-list-payment-number">5 519.62 ₽</span>
-                                </div>
-                                <a href="https://khv.mf-group.ru/personal/orders/#"
-                                   class="sale-order-list-change-payment" id="33867/1">
-                                    сменить способ оплаты </a>
-
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-xs-12 sale-order-list-button-container">
-                                <a class="sale-order-list-button" target="_blank"
-                                   href="https://khv.mf-group.ru/personal/order/payment?ORDER_ID=33867&amp;PAYMENT_ID=33867/1">
-                                    Оплатить </a>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12 sale-order-list-inner-row-template">
-                            <a class="sale-order-list-cancel-payment">
-                                <i class="fa fa-long-arrow-left"></i> назад </a>
-                        </div>
-                    </div>
-                    <div class="sale-order-list-inner-title-line">
-                        <span class="sale-order-list-inner-title-line-item">Доставка</span>
-                        <span class="sale-order-list-inner-title-line-border"></span>
-                    </div>
-                    <div class="row sale-order-list-inner-row">
-                        <div class="col-md-9 col-sm-8 col-xs-12 sale-order-list-shipment">
-                            <div class="sale-order-list-shipment-title">
-									<span class="sale-order-list-shipment-element">
-										Отгрузка										№33867/2, стоимость доставки 0 ₽									</span>
-                                <span class="sale-order-list-status-alert">Не отгружено</span>
-                            </div>
-
-                            <div class="sale-order-list-shipment-status">
-                                <span class="sale-order-list-shipment-status-item">Статус отгрузки:</span>
-                                <span class="sale-order-list-shipment-status-block">Ожидает обработки</span>
-                            </div>
-
-                            <div class="sale-order-list-shipment-item">
-                                Служба доставки:
-                                Самовывоз
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row sale-order-list-inner-row">
-                        <div class="sale-order-list-top-border"></div>
-                        <div class="col-md-8  col-sm-12 sale-order-list-about-container">
-                            <a class="sale-order-list-about-link" href="https://khv.mf-group.ru/personal/orders/33867">Подробнее
-                                о заказе</a>
-                        </div>
-                        <div class="col-md-2 col-sm-12 sale-order-list-repeat-container">
-                            <a class="sale-order-list-repeat-link"
-                               href="https://khv.mf-group.ru/personal/orders/?COPY_ORDER=Y&amp;ID=33867">Повторить
-                                заказ</a>
-                        </div>
-                        <div class="col-md-2 col-sm-12 sale-order-list-cancel-container">
-                            <a class="sale-order-list-cancel-link"
-                               href="https://khv.mf-group.ru/personal/cancel/33867?CANCEL=Y">Отменить заказ</a>
-                        </div>
-                    </div>
-                </div>
+                <div class="pagination-controls__item">След</div>
+                <div class="pagination-controls__item">Конец</div>
             </div>
         </div>
         <div class="clearfix"></div>
-
     </div>
 </div>
 
